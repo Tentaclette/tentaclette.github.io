@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.overlay {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(2rem);
+  opacity: 1;
+  transition: opacity 0.2s;
+} .overlay-window {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50vw;
+  max-width: 32rem;
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+} .overlay-title {
+  font-size: 1.5rem;
+  text-align: center;
+} .overlay-buttons {
+  display: flex;
+  gap: 1rem;
+} .overlay-button {
+  flex-grow: 1;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+.under-18 { background: #333; }
+.over-18 { background: hsl(340deg, 50%, 50%); }
+
+.title, main {
+  width: 100vw;
+  max-width: 64rem;
+  padding: 1rem;
+  margin-inline: auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #181818;
+  font-size: 2rem;
+  color: hsl(340deg, 50%, 50%);
+}
+
+main {
+  display: grid;
+  gap: 1rem;
+} .subtitle {
+  font-size: 1.5rem;
+} p {
+  margin: 0;
+} .nav-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+} .nav-button {
+  background: #181818;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #fff !important;
+  text-decoration: none;
+} .nav-button.here {
+  background: hsl(340deg, 50%, 50%);;
+} .nav-button:hover {
+  background: #282828;
+}
+
+a:link { color: hsl(340deg, 50%, 50%); }
+a:visited { color: hsl(340deg, 25%, 50%); }
+a:hover { color: hsl(340deg, 50%, 100%); }
+a:active, a:active { color: hsl(340deg, 50%, 100%); }
+
+
